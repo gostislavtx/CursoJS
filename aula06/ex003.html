@@ -1,31 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Definindo o documento como HTML5 e o idioma em português -->
     <meta charset="UTF-8">
+    <!-- Configurando o viewport para responsividade -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Definindo o título que aparecerá na aba do navegador -->
     <title>Meu primeiro programa...</title>
     <style>
+        /* Estilizando o corpo da página */
         body {
-            background-color: rgb(105, 105, 173);
-            color: white;
-            font: normal 20pt Arial;
+            background-color: rgb(105, 105, 173); /* Cor de fundo: azul escuro */
+            color: white; /* Cor do texto: branco */
+            font: normal 20pt Arial; /* Fonte padrão: Arial, tamanho 20pt */
         }
+        /* Estilizando o título principal (h1) */
         h1 {
-            color:rgb(255, 212, 22)
-
+            color: rgb(255, 212, 22); /* Cor do título: amarelo */
         }
     </style>
 </head>
 <body>
-    <h1>Olá, mundo!</h1> <!-- Isso é um comentário -->
+    <!-- Título da página -->
+    <h1>Olá, mundo!</h1> <!-- Comentário para o título -->
+    <!-- Parágrafo de exemplo -->
     <p>Já me livrei da maldição</p>
     <script>
-        var n1 = Number(window.prompt('Digite um número: ')) // string
-        var n2 = Number(window.prompt('Digite outro número: ')) //string
-        var s = n1 + n2
-        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) //Concatenação
-        // (number + number) para adição
-        // (string + string) para concatenação
+        // Solicita ao usuário para digitar um número, e converte o valor de string para número
+        var n1 = Number(window.prompt('Digite um número: ')); // Usuário insere o primeiro número
+        
+        // Solicita ao usuário para digitar outro número, e também converte para número
+        var n2 = Number(window.prompt('Digite outro número: ')); // Usuário insere o segundo número
+        
+        // Realiza a soma dos dois números inseridos
+        var s = n1 + n2;
+
+        // Exibe o resultado da soma em uma janela de alerta
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`); 
+        // Aqui utilizamos template literals para facilitar a concatenação e exibição dos valores na string
+
+        // Observação:
+        // Quando somamos números, o resultado é uma adição numérica (number + number).
+        // Quando somamos strings, o resultado é uma concatenação (string + string).
     </script>
 </body>
 </html>
