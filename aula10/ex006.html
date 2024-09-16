@@ -1,41 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <!-- Definindo o documento como HTML5 e o idioma em português do Brasil -->
     <meta charset="UTF-8">
+    <!-- Configurando a página para ser responsiva em dispositivos móveis -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eventos DOW</title>
+    <!-- Título da página -->
+    <title>Eventos DOM</title>
     <style>
+        /* Estilizando a div com o id "area" */
         div#area {
-            background-color: rgb(42, 139, 42);
-            color: white;
-            width: 200px;
-            height: 200px;
-            line-height: 200px;
-            text-align: center;
+            background-color: rgb(42, 139, 42); /* Cor de fundo verde */
+            color: white; /* Cor do texto branca */
+            width: 200px; /* Largura de 200px */
+            height: 200px; /* Altura de 200px */
+            line-height: 200px; /* Centraliza o texto verticalmente */
+            text-align: center; /* Centraliza o texto horizontalmente */
         }
     </style>
 </head>
 <body>
+    <!-- Div interativa que reage a eventos de clique, mouse entrar e sair -->
     <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
         Interaja...
     </div>
         
     <script>
-        var a = window.document.getElementById('area')
+        // Acessando a div com o id 'area'
+        var a = window.document.getElementById('area');
 
+        // Função que é executada quando a div é clicada
         function clicar() {
-            
-            a.innerText = 'Clicou!'
-            a.style.background = 'red' 
+            a.innerText = 'Clicou!'; // Muda o texto da div para "Clicou!"
+            a.style.background = 'red'; // Muda a cor de fundo para vermelho
         }
         
+        // Função que é executada quando o mouse entra na área da div
         function entrar() {
-            a.innerText = 'Entrou!'
+            a.innerText = 'Entrou!'; // Muda o texto da div para "Entrou!"
         }
 
+        // Função que é executada quando o mouse sai da área da div
         function sair() {
-            a.innerText = 'Saiu!'
-            a.style.background = 'green'
+            a.innerText = 'Saiu!'; // Muda o texto da div para "Saiu!"
+            a.style.background = 'green'; // Muda a cor de fundo de volta para verde
         }
     </script>
 </body>
