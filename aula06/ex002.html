@@ -1,27 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Definindo que o documento é HTML5 e o idioma é português do Brasil -->
     <meta charset="UTF-8">
+    <!-- Garantindo que a página vai ser responsiva e se adaptar bem em dispositivos móveis -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Definindo o título que vai aparecer na aba do navegador -->
     <title>Meu primeiro programa...</title>
     <style>
+        /* Estilizando o corpo da página */
         body {
-            background-color: rgb(105, 105, 173);
-            color: white;
-            font: normal 20pt Arial;
+            background-color: rgb(105, 105, 173); /* Cor de fundo: azul escuro */
+            color: white; /* Cor do texto: branco */
+            font: normal 20pt Arial; /* Fonte: Arial, tamanho 20pt, estilo normal */
         }
+        /* Estilizando o título principal */
         h1 {
-            color:rgb(255, 212, 22)
-
+            color: rgb(255, 212, 22); /* Cor do título (h1): amarelo forte */
         }
     </style>
 </head>
 <body>
-    <h1>Olá, mundo!</h1> <!-- Isso é um comentário -->
+    <!-- Título que aparece na página -->
+    <h1>Olá, mundo!</h1>
+    <!-- Parágrafo abaixo do título -->
     <p>Já me livrei da maldição</p>
     <script>
-        var nome = window.prompt('Qual é o seu nome?') //Vai perguntar o nome...
-        window.alert('É um grande prazer em te conhecer, ' + nome + '!') //Concatenação
+        // Exibe uma janela de alerta simples
+        window.alert('Minha primeira mensagem');
+
+        // Exibe uma janela de confirmação (botões OK e Cancelar) perguntando se está gostando de JavaScript
+        window.confirm('Está gostando de JS?');
+
+        // Exibe uma janela que pede o nome do usuário e espera a entrada dele
+        window.prompt('Qual é o seu nome?');
     </script>
 </body>
 </html>
