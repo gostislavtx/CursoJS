@@ -1,33 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <!-- Definindo que o documento é HTML5 e o idioma é português do Brasil -->
     <meta charset="UTF-8">
+    <!-- Configurando a página para ser responsiva -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primeiros passos com DOW</title>
+    <!-- Definindo o título da página -->
+    <title>Primeiros passos com DOM</title>
     <style>
+        /* Estilizando o corpo da página */
         body {
-            background-color: rgb(68, 125, 199);
-            color: white;
-            font: normal 18pt Arial;
+            background-color: rgb(68, 125, 199); /* Cor de fundo azul */
+            color: white; /* Cor do texto branca */
+            font: normal 18pt Arial; /* Fonte Arial, tamanho 18pt */
         }
-
     </style>  
 </head>
 <body>
-    <h1>Iniciando os Estudos DOW</h1>
-    <p>Aqui vai o resultado</p>
-    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
-    <div id = "msg">Clique em mim</div>
+    <h1>Iniciando os Estudos DOM</h1> <!-- Título da página -->
+    <p>Aqui vai o resultado</p> <!-- Primeiro parágrafo -->
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p> <!-- Segundo parágrafo -->
+    <div id="msg">Clique em mim</div> <!-- Div com id "msg" que será manipulada -->
     <script>
-        var corpo = window.document.body
-        var p1 = window.document.getElementsByTagName('p')[1]
+        // Acessando o corpo da página
+        var corpo = window.document.body;
+
+        // Acessando o segundo parágrafo (índice 1, porque o índice 0 seria o primeiro <p>)
+        var p1 = window.document.getElementsByTagName('p')[1];
+
         /*
-        var d = window.document.getElementById('msg')
-        d.style.background = 'green'
-        d.innerText = 'Estou aguardando...'
+        // Tentativa de acessar a div com id 'msg' usando getElementById
+        var d = window.document.getElementById('msg');
+        // Alterando a cor de fundo da div para verde
+        d.style.background = 'green';
+        // Alterando o texto da div
+        d.innerText = 'Estou aguardando...';
         */
-        var d = window.document.querySelector('div#msg)')
-        d.style.background = 'blue'
-        </script>
+
+        // Correção do seletor querySelector (faltava fechar a string corretamente)
+        var d = window.document.querySelector('div#msg');
+        // Alterando a cor de fundo da div para azul
+        d.style.background = 'blue';
+    </script>
 </body>
-</html
+</html>
