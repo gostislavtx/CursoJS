@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <!-- Definindo o documento como HTML5 e o idioma em português do Brasil -->
     <meta charset="UTF-8">
+    <!-- Garantindo que a página seja responsiva em dispositivos móveis -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Definindo o título que aparece na aba do navegador -->
     <title>Document</title>
     <style>
+        /* Estilizando o corpo da página */
         body {
-            font: normal 20pt Arial;
+            font: normal 20pt Arial; /* Fonte padrão: Arial, tamanho 20pt */
         }
     </style>
 </head>
 <body>
 
     <script>
-        var nome = window.prompt('Qual é o seu nome?') 
-        document.write(`Óla, <strong>${nome}</strong>!<br/c> Seu nome tem ${nome.length} letras. <br/c> `)
-        document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}. <br/c> `)
-        document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}. `)
+        // Solicita ao usuário que insira o nome dele
+        var nome = window.prompt('Qual é o seu nome?'); 
+
+        // Exibe uma saudação personalizada usando o nome fornecido
+        document.write(`Olá, <strong>${nome}</strong>!<br/>`); 
+
+        // Mostra quantas letras tem o nome do usuário
+        document.write(`Seu nome tem ${nome.length} letras. <br/>`); 
+
+        // Exibe o nome do usuário em letras maiúsculas
+        document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}. <br/>`); 
+
+        // Exibe o nome do usuário em letras minúsculas
+        document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}. `); 
     </script>
     
 </body>
